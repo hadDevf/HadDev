@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Website Developer, Jihad Habiburrahman">
+  <meta name="keywords" content="Website Developer, Jihad Habiburrahman">
+  <meta name="google-site-verification" content="HkkP4II6GUNlsX16u94T5d0zix9UO3vy4Niq0a41kow" />
+  <link rel="icon" href="HadDevProfile.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script(1).js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <title>HadDev Portofolio</title>
+</head>
+<body>
+  <div id="loading">
+    <h2 class="loading-text" id="rendering-text">Rendering...</h2>
+  </div>
+    <nav class="header" id="header">
+        <h1>Had<b class="tosca">Dev</b></h1>
+      <div class="fitur">
+        <button class="light" onclick="brightnes()" id="light">✹</button>
+        <button class="night" onclick="brightnes()" id="night">☽</button>
+        <h1 class="menu" onclick="opennav()">≡</h1>
+      </div>
+      <div class="barlap">
+        <a onclick="scrollAbout()">About</a>
+        <a onclick="scrollSkill()">Skill</a>
+        <a onclick="scrollProject()">Project</a>
+        <a onclick="scrollEducation()">Education</a>
+        <a onclick="scrollContact()">Contact</a>
+      </div>
+    </nav>
+    <nav class="hamburger" id="hamburger">
+      <h4 onclick="closenav()">✘</h4>
+      <div class="list">
+        <a onclick="scrollAbout()">About</a>
+        <a onclick="scrollSkill()">Skill</a>
+        <a onclick="scrollProject()">Project</a>
+        <a onclick="scrollEducation()">Education</a>
+        <a onclick="scrollContact()">Contact</a>
+      </div>
+      <div class="glow"></div>
+    </nav>
+    <div class="heading" id="heading">
+      <img src="HadDevProfile.png" alt="profile">
+      <div class="judul">
+      <p id="txt">Welcome to portofolio</p>
+      <h1 id="txt">Jihad Habiburrah<b class="tosca">man</b></h1>
+      <p id="txt">I'm a frontend web developer</p>
+    </div>
+    <div class="img-heading">
+      <img src="github.png" class="img-apps">
+      <img src="tik-tok (1).png" onclick="tt()" class="img-apps">
+    </div>
+    </div>
+  <div class="container" id="container">
+    <div class="card about" id="about" id="about1" data-aos="fade-up">
+      <h1>About<b class="tosca" id="warna"> Me</b></h1>
+      <hr class="garis" id="garis"/>
+      <p>Halo, Kenalin namaku<b class="tosca" id="warna1"> Jihad Habiburrahman</b>, aku adalah seorang pelajar SMK berjurusan RPL ( Rekayasa Perangkat Lunak ). Aku cukup mahir dalam bidang pengembangan website, bisa dibilang aku ini adalah <i class="tosca" id="warna2">frontend web developer</i> ( pembuat UI ( User Interface ) web ). Dan website ini kubuat dengan ilmu dan imajinasiku sendiri.
+      </p>
+      <div class="penawaran">
+        <p>Ingin dibuatkan website? <a onclick="scrollContact()" id="cm">Contact me</a></p>
+      </div>
+    </div>
+   <div class="card skill" id="skill" id="skill1" data-aos="fade-up">
+     <h1>Skil<b class="tosca" id="warna3">l</b></h1>
+     <hr class="garis" id="garis2">
+     <div class="skillKu">
+       <div class="skill-name" id="skill-name">
+         <h4>HTML</h4>
+       </div>
+       <div class="skill-bar">
+         <div class="skill-per" style="max-width:80%;" per="80%"></div>
+     </div>
+    </div>
+     <div class="skillKu">
+       <div class="skill-name" id="skill-name1">
+         <h4>CSS</h4>
+       </div>
+       <div class="skill-bar">
+         <div class="skill-per" style="max-width:80%;" per="80%"></div>
+     </div>
+    </div>
+     <div class="skillKu" id="skill-name2">
+       <div class="skill-name">
+         <h4>JAVASCRIPT</h4>
+       </div>
+       <div class="skill-bar">
+         <div class="skill-per" per="43%" style="max-width:43%;"></div>
+     </div>
+    </div>
+   </div>
+   <div class="card project" id="project" id="project1" data-aos="fade-up">
+     <h1>Projec<b class="tosca" id="warna4">t</b></h1>
+     <hr class="garis" id="garis3">
+     <div class="img-project">
+       <img src="Project 1.jpg" class="apps-project" onclick="window.location.href = 'https://kaelvxy.github.io/addon_mcpe/Beranda.html'">
+     </div>
+   </div>
+   <div class="card education" id="education" id="education1" data-aos="fade-up">
+     <h1>Educatio<b class="tosca" id="warna5">n</b></h1>
+     <hr class="garis" id="garis4">
+     <div class="txt-penjelasan">
+     <h4>HTML :</h4>
+     <p class="txt-desk"><span class="txt-penting" id="warna6"><strong>HTML</strong></span> ( HyperText Markup Language ) adalah bahasa markup untuk membuat struktur dan konten halaman website.</p>
+    </div>
+     <div class="txt-penjelasan">
+     <h4>CSS :</h4>
+     <p class="txt-desk"><span class="txt-penting" id="warna7"><strong>CSS</strong></span> ( Cascading Style Sheets ) adalah bahasa styling untuk mengatur tampilan dan layout halaman website.</p>
+    </div>
+     <div class="txt-penjelasan">
+     <h4>Javascript :</h4>
+     <p class="txt-desk"><span class="txt-penting" id="warna8"><strong>JAVASCRIPT</strong></span> adalah bahasa pemrograman untuk membuat halaman website interaktif dan dinamis.</p>
+    </div>
+     <div class="txt-penjelasan">
+     <h4>Web Developer :</h4>
+     <p class="txt-desk"><span class="txt-penting" id="warna9"><strong>WEB DEVELOPER</strong></span> adalah orang yang membuat dan mengembangkan website, biasanya menggunakan HTML, CSS, dan JavaScript.</p>
+    </div>
+   </div>
+   <div class="card contact" id="contact" id="contact1" data-aos="fade-up">
+     <h1>Contac<b class="tosca" id="warna10">t</b></h1>
+     <hr class="garis" id="garis5">
+     <div class="app-contact" onclick="wa()">
+       <div class="app wa">
+         <img src="social.png" alt="">
+         <h3>Whatsapp</h3>
+       </div>
+       <div class="app tt" onclick="tt()">
+         <img src="tik-tok (1).png" alt="">
+         <h3>TikTok</h3>
+       </div>
+       <div class="app ig" onclick="ig()">
+         <img src="instagram.png" alt="">
+         <h3>Instagram</h3>
+       </div>
+       <div class="app tl" onclick="tele()">
+         <img src="telegram.png" alt="">
+         <h3>Telegram</h3>
+       </div>
+     </div>
+   </div>
+  </div>
+   <br class="jarak">
+   <script>
+     AOS.init();
+   </script>
+</body>
+</html>

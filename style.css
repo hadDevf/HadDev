@@ -1,0 +1,703 @@
+body {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  justify-items: center;
+  background: #1b1b1b;
+  font-family: Segoe UI,Verdana,Tahoma;
+  transition: all 0.15s linear;
+}
+.container {
+  width: 100%;
+  justify-content: center;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+.header {
+  width: 100%;
+  height: 53px;
+  position: fixed;
+  top: 0;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  animation: munculAtas 1s ease-in-out;
+  z-index: 4;
+}
+.header h1 {
+  margin-left: 10px;
+  font-family: ARJULIAN;
+}
+.header .menu {
+  margin-right: 10px;
+  font-size: 50px;
+  line-height: 0;
+}
+.barlap {
+  display: none;
+}
+.hamburger {
+  width: 100%;
+  color: white;
+  background: #2a2a2a;
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 0 5px white;
+  z-index: 5;
+}
+.hamburger h4 {
+  font-size: 30px;
+  margin: 0;
+  position: fixed;
+  top: 10px;
+  right: 20px;
+}
+.glow {
+  width: 100%;
+  height: 1.5px;
+  background: linear-gradient(45deg,#ff0aff,#00faff,#12ff00,#12ff,yellow,red);
+  background-size: 500%;
+  animation: backgroundAnimasi 3s linear infinite;
+  filter: blur(to bottom, 1px);
+  display: none;
+  z-index: 5;
+}
+.list {
+  width: 100%;
+  line-height: 3.2;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+.list a {
+  font-size: 20px;
+  font-weight: 650;
+}
+.heading {
+  width: 100%;
+  margin-top: 50px;
+  padding-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+  background: #2a2a2a;
+  display: flex;
+  flex-direction: column;
+  animation: munculTengah 1s ease-in-out;
+}
+.heading img {
+  width: 25%;
+  border-radius: 50%;
+  margin: 20px;
+  margin-top: 40px;
+  transition: all .2s linear;
+}
+.heading img:hover {
+  transform: rotate(10deg);
+  overflow: hidden;
+  box-shadow: -1px -1px 10px #11ff00, 2px 2px 10px blue;
+  transition: all .2s linear;
+}
+.judul h1 {
+  color: white;
+  font-family: ARJULIAN;
+  font-size: 30px;
+  animation: jedagJedug 2.2s ease-in-out infinite;
+  z-index: 0;
+}
+.judul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 0.3px;
+  color: white;
+  margin-bottom: 20px;
+  z-index: 0;
+}
+.judul p {
+  font-weight: 650;
+  font-size: 15px;
+  font-family: DaxBold;
+  animation: jedagJedug 2s ease-in-out infinite;
+  z-index: 0;
+  margin: 7px;
+}
+tosca {
+  color: #00faff;
+}
+.tosca {
+  color: #00faff;
+}
+pink {
+  color: #ff0aff;
+}
+.img-heading {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: centet;
+}
+.img-heading img {
+  width: 24px;
+  border-radius: 50%;
+  background: white;
+  margin: 0;
+}
+@keyframes mantul {
+  0% {
+    transform: translateY(-100%);
+  }
+  30% {
+    transform: translateY(0%);
+  }
+  60% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes tutupMantul {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(2%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+@font-face {
+  font-family:'AquireBold';
+  src: url('fonts/AquireBold-8Ma60.otf');
+}
+aquirebold {
+  font-family: AquireBold;
+}
+@font-face {
+  font-family:'Barclays';
+  src: url('fonts/Barclays Premier League.ttf');
+}
+barclays {
+  font-family: Barclays;
+}
+@font-face {
+  font-family:'BorgSquad';
+  src: url('fonts/borgsquad.ttf');
+}
+borgsquad {
+  font-family: BorgSquad;
+}
+@font-face {
+  font-family:'Grand';
+  src: url('fonts/Grand.ttf');
+}
+grand {
+  font-family: Grand;
+}
+@font-face {
+  font-family:'ArchiveRegular';
+  src: url('fonts/Archive-Regular.otf');
+}
+archiveregular {
+  font-family: ArchiveRegular;
+}
+@font-face {
+  font-family:'DaxBold';
+  src: url('fonts/Dax-Bold.otf');
+}
+daxbold {
+  font-family: DaxBold;
+}
+@font-face {
+  font-family:'Arjulian';
+  src: url('fonts/ARJULIAN.ttf');
+}
+arjulian {
+  font-family: Arjulian;
+}
+.card {
+  width: 90%;
+  border-radius: 5px;
+  display: none;
+  flex-direction: column;
+  color: #fff;
+  background: #2a2a2a;
+  margin-top: 15px;
+  transition: all 0.3s linear;
+  padding: 10px;
+  animation: munculBawah 1s linear;
+}
+.card h1 {
+  margin-top: 5px;
+  margin-left: 7px;
+  font-size: 25px;
+  font-family: Barclays;
+}
+.card p {
+  font-size: 15px;
+  font-weight: 650;
+  margin-left: 7px;
+  margin-right: 7px;
+  font-family: Tahoma,Segoe UI;
+}
+.card .garis {
+  height: 1px;
+  width: 15%;
+  display: flex;
+  background: #fff;
+  border: none;
+  border-radius: 2px;
+  justify-self: start;
+  margin-top: -10px;
+  margin-left: 7px;
+}
+.skillKu {
+  width: 100%;
+}
+.skill-name {
+  color: white;
+  font-family: ArchiveRegular;
+  font-weight: 200;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+  line-height: 0.1;
+  font-size: 15px;
+}
+.skill-bar {
+  height: 7px;
+  background: #868686;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.skill-per {
+  height: 7px;
+  background: linear-gradient(40deg,#ff00fb,#00faff);
+  border-radius: 6px;
+  animation: load 2s ease-out;
+  position: relative;
+}
+grey {
+  color: #8e8e8e;
+}
+yellow {
+  color: yellow;
+}
+red {
+  color: red;
+}
+greenlight {
+  color: #11ff00;
+}
+green {
+  color: green;
+}
+blue {
+  color: blue;
+}
+@keyframes munculBawah {
+  from {
+    opacity: 0;
+    transform: translateY(7%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes munculAtas {
+  from {
+    opacity: 0;
+    transform: translateY(-7%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes jedagJedug {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes load {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes shadowKedip {
+  0% {
+    box-shadow: 0 0 0;
+  }
+  50% {
+    box-shadow: 0 0 20px white;
+  }
+  100% {
+    box-shadow: 0 0 0;
+  }
+}
+@keyframes munculTengah {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes backgroundAnimasi {
+  0%, 100% {
+    background-position: 0% 500%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+}
+.card .desc {
+  line-height: 0.5;
+  font-weight: 650;
+}
+.desc .list-name {
+  line-height: 1.4;
+  margin-left: 7px;
+  font-family: Segoe UI, Tahoma;
+  font-size: 15px;
+  font-family: DaxBold;
+}
+.desc p {
+  font-size: 16px;
+  font-family: ArchiveRegular;
+}
+@keyframes zoom {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.02;
+  }
+}
+.txt-penjelasan {
+  justify-items: start;
+  line-height: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+.txt-penjelasan h4 {
+  line-height: 0.4;
+  font-family: ArchiveRegular;
+  margin-bottom: 1px;
+  font-size: 17px;
+}
+.txt-desk {
+  text-align: left;
+  font-family: Trebuchet MS;
+  margin-bottom: 1px;
+  font-family: Sans-Serif;
+  font-weight: 650;
+  line-height: 1.1;
+  letter-spacing: 0.3px;
+  font-size: 15px;
+}
+.txt-penting {
+  color: #00faff;
+  font-weight: 1000;
+}
+.img-project {
+  display: flex;
+  overflow-x: auto;
+  padding-left: 10px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  gap: 0.5rem;
+  justify-content: start;
+}
+.apps-project {
+  width: 20%;
+  border-radius: 5px;
+  transition: all 0.2s linear;
+}
+.apps-project:hover {
+  box-shadow: 0 0 10px #fff;
+  transform: scale(1.04);
+  transition: all 0.2s linear;
+}
+.app-contact {
+  display: flex;
+  overflow-x: auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px;
+  gap: 1rem;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 75px;
+  height: 75px;
+  max-height: 100px;
+  max-width: 100px;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px white;
+  border: none;
+  padding: 7px;
+  padding-bottom: 1px;
+  transition: all .15s linear;
+}
+.app img {
+  width: 35%;
+  display: flex;
+  justify-self: center;
+}
+.app h3 {
+  font-size: 15px;
+  display: flex;
+}
+.wa:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 14px #11ff00;
+  transition: all .15s linear;
+  border: none;
+}
+.ig:hover {
+  transform: scale(1.05);
+  box-shadow: -2px -2px 14px #f58529, 2px 2px 14px purple ;
+  transition: all .15s linear;
+  border: none;
+}
+.tt:hover {
+  transform: scale(1.05);
+  box-shadow: -2px -2px 14px red, 2px 2px 14px #00ffff;
+  transition: all .15s linear;
+  border: none;
+}
+.tl:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 14px #0088cc;
+  transition: all .15s linear;
+  border: none;
+}
+biru {
+  color: #0088cc;
+}
+@keyframes memutar {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+    box-shadow: 0 0 10px white;
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 2px 2px 5px white;
+  }
+}
+@keyframes boxShadow {
+  to {
+    box-shadow: 0 0 9px white;
+  }
+}
+#loading {
+  width: 100%;
+  height: 100%;
+  background: white;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 7;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s linear;
+}
+#loading .loading-text {
+  font-size: 20px;
+  font-family: Monospace;
+  animation: loading 1.5s linear infinite;
+  transition: all 1s linear;
+}
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#about p {
+  text-align: justify;
+}
+.penawaran {
+  display: flex;
+  font-weight: 700;
+  font-family: Segoe UI, Verdana;
+  margin-top: -10px;
+  font-size: 13px;
+  justify-content: center;
+  text-align: center;
+}
+.penawaran a {
+  text-decoration: underline;
+  color: #00faff;
+  font-size: 13px;
+  cursor: wait;
+}
+@keyframes tanda {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.header a {
+  display: none;
+}
+.light {
+  width: 37px;
+  height: 37px;
+  text-align: center;
+  padding: 0;
+  display: none;
+  flex-direction: column;
+  border-radius: 5px;
+  color: white;
+  border: 1.1px solid #fff;
+  background: transparent;
+  font-size: 30px;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s linear;
+}
+.night {
+  width: 37px;
+  height: 37px;
+  text-align: center;
+  padding: 0;
+  display: none;
+  flex-direction: column;
+  border-radius: 5px;
+  color: white;
+  border: 1.1px solid #fff;
+  background: transparent;
+  font-size: 30px;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s linear;
+}
+.fitur {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+  margin-right: 10px;
+  transition: all .3s linear;
+}
+@media (min-width: 1024px) {
+  body {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: #1b1b1b;
+  }
+  .container {
+    width: 90%;
+    position: static;
+    margin-top: 50px;
+    margin-left: 350px;
+    display: flex;
+    height: 70vh;
+    justify-content: start;
+    align-items: center;
+  }
+  .card {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background: #2a2a2a;
+    margin-bottom: 15px;
+    margin-left: 200px;
+    transition: all 0.3s linear;
+    padding: 10px;
+    animation: munculBawah 1s linear;
+  }
+  .heading {
+    width: 30%;
+    height: 70vh;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    left: 250px;
+    top: 150px;
+    color: #fff;
+    border-radius: 10px;
+    background: #2a2a2a;
+    margin-top: 15px;
+    transition: all 0.3s linear;
+    padding: 10px;
+    animation: munculBawah 1s linear;
+  }
+  .hamburger {
+    display: none;
+  }
+  .hamburger .list {
+    display: none;
+  }
+  .header {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+  }
+  .header .menu {
+    display: none;
+  }
+  .header a {
+    display: inline;
+    font-weight: bold;
+  }
+  .barlap {
+    display: flex;
+    gap: 2em;
+    margin-right: 30px;
+    color: white;
+  }
+  .jarak {
+    height: 50vh;
+  }
+}
