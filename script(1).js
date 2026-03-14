@@ -46,22 +46,22 @@ function scrollSkill() {
 function wa() {
   setTimeout(() => {
     window.location.href = "https://api.whatsapp.com/send?phone=+6283866317501";
-  }, 1000);
+  }, 0);
 }
 function tt() {
   setTimeout(() => {
     window.location.href = "https://vm.tiktok.com/ZS91x3bL8B8rE-FLK2Z/";
-  }, 1000);
+  }, 0);
 }
 function ig() {
   setTimeout(() => {
     window.location.href = "https://www.instagram.com/nyxtrix1?igsh=MWxtaXN6enZpbWU2OQ%3D%3D";
-  }, 1000);
+  }, 0);
 }
 function tele() {
   setTimeout(() => {
     window.location.href = "t.me/Hadzztele";
-  }, 1000);
+  }, 0);
 }
 function projectaddon() {
   window.location.href = "https://kaelvxy.github.io/addon_mcpe/Beranda.html";

@@ -24,7 +24,7 @@ body {
 }
 .header {
   width: 90%;
-  height: 6vh;
+  padding: 2px;
   position: absolute;
   background: #2b2b2b;
   display: flex;
@@ -1053,7 +1053,7 @@ biru {
 #aboutme {
   display: none;
   flex-direction: column;
-  padding-top: 105vh;
+  padding-top: 115vh;
   padding-bottom: 20px;
 }
 .bagian {
@@ -1308,6 +1308,8 @@ biru {
   margin-top: 50px;
   justify-content: center;
   align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 .getTouch h1 {
   margin-bottom: 30px;
@@ -1378,6 +1380,9 @@ biru {
     font-size: 15px;
     font-family: Segoe UI;
     font-weight: bold;
+  }
+  .nav:hover {
+    text-decoration: underline;
   }
   .nav.active {
     color: black;
